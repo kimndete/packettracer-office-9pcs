@@ -1,0 +1,23 @@
+Building configuration...
+
+Current configuration : 983 bytes
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname Router0
+!
+!
+!
+!
+ip dhcp excluded-address 192.168.10.1 192.168.10.9
+!
+ip dhcp pool OFFICE-LAN
+ network 192.168.10.0 255.255.255.0
+ default-router 192.168.10.1
+ dns-server 8.8.8.8
+!
+!
+ --More-- 
